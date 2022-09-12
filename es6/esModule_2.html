@@ -15,7 +15,17 @@ window.b = 2;
 // https://cdnjs.com/libraries/vue
 // 比對語法：https://v3.vuejs.org/guide/introduction.html#declarative-rendering
 
+import {createApp} from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.0.2/vue.esm-browser.js';
 
+const Counter = {
+  data(){
+    return {
+      counter:5
+    }
+  }
+}
+
+createApp(Counter).mount('#app');
 </script>
 <!-- 🙇🙇練習結束🙇🙇 -->
 </main>

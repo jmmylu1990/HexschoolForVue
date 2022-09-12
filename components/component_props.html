@@ -30,13 +30,13 @@
 
           <h3>動態資源</h3>
           <p>技巧：前內、後外</p>
-          <photo></photo>
+          <photo v-bind:url="imgUrl"></photo>
 
           <h3>單向數據流</h3>
           <photo2 :url="imgUrl"></photo2>
 
           <h3>命名限制</h3>
-          <photo3></photo3>
+          <photo3 :super-url="imgUrl"></photo3>
         </div>
 
         <script type="module">
