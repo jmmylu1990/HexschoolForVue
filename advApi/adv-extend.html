@@ -5,10 +5,10 @@
 
 <div id="app">
   <h2>單一擴展</h2>
-  <card></card>
+  <!-- <card></card> -->
 
   <h3>權重</h3>
-<!--  <card2></card2>-->
+ <card2></card2>
 
 
   <h3>重點：</h3>
@@ -49,6 +49,8 @@ const app = Vue.createApp({});
     template: `<div class="card">
       <div class="card-body">{{ name }}</div>
     </div>`,
+    extends: extendComponent1,
+    mixins:[],
     created() {
       console.log('card 的元件生命週期')
     }
